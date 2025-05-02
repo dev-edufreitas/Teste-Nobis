@@ -7,7 +7,6 @@ Este é um projeto React criado com Create React App e configurado para ser exec
 Para executar este projeto, você precisará ter instalado:
 
 - [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Estrutura do Projeto
 
