@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Teste-Nobis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React criado com Create React App e configurado para ser executado em um container Docker.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+Para executar este projeto, você precisará ter instalado:
 
-### `npm start`
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O projeto está configurado com a seguinte estrutura:
 
-### `npm test`
+- `src/`: Código fonte da aplicação React
+- `public/`: Arquivos públicos
+- `Dockerfile`: Configuração para a imagem Docker
+- `docker-compose.yml`: Configuração do ambiente Docker
+- `.gitignore`: Arquivos e diretórios ignorados pelo Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Inicialização Rápida
 
-### `npm run build`
+Para iniciar o projeto, siga estes passos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório
+   ```bash
+   git clone <URL_DO_REPOSITÓRIO>
+   cd teste-nobis
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Inicie o container Docker
+   ```bash
+   docker-compose up
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Acesse a aplicação em seu navegador
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run eject`
+## Scripts Disponíveis
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+No diretório do projeto, você pode executar:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `docker-compose up`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Inicia o ambiente de desenvolvimento. A aplicação será executada em [http://localhost:3000](http://localhost:3000).
+A página será recarregada automaticamente se você fizer alterações no código.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `docker-compose up --build`
 
-## Learn More
+Reconstrói a imagem Docker e inicia o ambiente de desenvolvimento.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `docker-compose down`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Encerra o ambiente de desenvolvimento.
 
-### Code Splitting
+## Tecnologias Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces
+- [Docker](https://www.docker.com/) - Plataforma de containerização
+- [Node.js](https://nodejs.org/) - Ambiente de execução JavaScript
