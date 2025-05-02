@@ -30,7 +30,7 @@ Para iniciar o projeto, siga estes passos:
 
 2. Inicie o container Docker
    ```bash
-   docker-compose up
+   docker compose up
    ```
 
 3. Acesse a aplicação em seu navegador
@@ -47,11 +47,11 @@ No diretório do projeto, você pode executar:
 Inicia o ambiente de desenvolvimento. A aplicação será executada em [http://localhost:3000](http://localhost:3000).
 A página será recarregada automaticamente se você fizer alterações no código.
 
-### `docker-compose up --build`
+### `docker compose up --build`
 
 Reconstrói a imagem Docker e inicia o ambiente de desenvolvimento.
 
-### `docker-compose down`
+### `docker compose down`
 
 Encerra o ambiente de desenvolvimento.
 
